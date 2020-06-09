@@ -1,0 +1,40 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id=")iwxP1kZeLv{|*F]5A^n">Player</variable><variable type="KIND_SpriteKind" id="?Wh~v7{2-cyX[!`BGJyV">Projectile</variable><variable type="KIND_SpriteKind" id="_Vx)Eud[Rkw3=kd=%=ck">Food</variable><variable type="KIND_SpriteKind" id="a2?p1Wm8/UC9|eEA@lnb">Enemy</variable><variable id="xG$!pBfOgB#1Iu*w+PsV">mySprite</variable><variable id="qz+^5#XA|o(/wc#E*ZdI">mySprite2</variable><variable type="BLOCKLY_TILESET_TYPE" id="+z{F2HE:K]sUc!TXx)5N">0;16;16;0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="gameSplash"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text"><field name="TEXT">game galaxy present's</field></shadow></value><next><block type="gameSplash"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text"><field name="TEXT">ap 1940</field></shadow></value><next><block type="variables_set"><field name="VAR" id="xG$!pBfOgB#1Iu*w+PsV">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . f f f f . . . . . . 
+. . . . f f f 9 9 f f f . . . . 
+. . . f f f 9 9 9 9 f f f . . . 
+. . f f f e e e e e e f f f . . 
+. . f f e 9 9 9 9 9 9 e e f . . 
+. . f e 9 f f f f f f 9 e f . . 
+. . f f f f e e e e f f f f . . 
+. f f e f 4 f 4 4 f 4 f e f f . 
+. f e e 4 4 f 4 4 f 4 4 e e f . 
+. . f e e 4 4 4 4 4 4 e e f . . 
+. . . f e e 4 4 4 4 e e f . . . 
+. . 4 4 f 9 9 9 9 9 9 f 4 4 . . 
+. . 4 4 f 9 9 9 9 9 9 f 4 4 . . 
+. . 4 4 f f f f f f f f 4 4 . . 
+. . . . . f f f f f f . . . . . 
+. . . . . f f . . f f . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">9</field></shadow></value><next><block type="game_control_sprite"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="xG$!pBfOgB#1Iu*w+PsV">mySprite</field></block></value><next><block type="tilemap_editor"><field name="tilemap">tiles.createTilemap(
+            hex`1000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100`,
+            img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`,
+            [myTiles.tile0,sprites.builtin.brick],
+            TileScale.Sixteen
+        )</field><next><block type="spritesetpos"><value name="sprite"><block type="variables_get"><field name="VAR" id="xG$!pBfOgB#1Iu*w+PsV">mySprite</field></block></value><value name="x"><shadow type="positionPicker"><field name="index">0</field></shadow></value><value name="y"><shadow type="positionPicker"><field name="index">173</field></shadow></value><next><block type="camerafollow"><value name="sprite"><block type="variables_get"><field name="VAR" id="xG$!pBfOgB#1Iu*w+PsV">mySprite</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
